@@ -16,7 +16,7 @@ const Hero: React.FC = async () => {
             <div
                 className="hero min-h-screen"
                 style={{
-                    backgroundImage: "url(/images/home-bg.jpg)",
+                    backgroundImage: "url(/images/home-bg.webp)",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}>
@@ -26,7 +26,7 @@ const Hero: React.FC = async () => {
                         <h1 className="mb-3 md:mb-5 text-2xl md:text-3xl font-bold text-white">{t('name')}</h1>
                         <div className="flex justify-center my-2 md:my-3">
                             <Image
-                                src="/logo.png"
+                                src="/logo.webp"
                                 alt="logo"
                                 width={60}
                                 height={60}

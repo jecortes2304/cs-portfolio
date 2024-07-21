@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                 <div className="navbar-start lg:hidden">
                     <Link href={"#hero"} className="btn btn-ghost" onClick={(e) => handleScroll(e, '#home')}>
                         <Image
-                            src="/logo.png"
+                            src="/logo.webp"
                             alt="logo"
                             width={35}
                             height={35}
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                 <div className="navbar-center hidden lg:flex justify-center items-center flex-1">
                     <Link href={"#hero"} className="mx-1 btn btn-ghost" onClick={(e) => handleScroll(e, '#home')}>
                         <Image
-                            src="/logo.png"
+                            src="/logo.webp"
                             alt="logo"
                             width={35}
                             height={35}

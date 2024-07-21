@@ -13,7 +13,7 @@ const Footer: React.FC = async () => {
                 <div className="flex flex-col items-center">
                     <p className="text-sm mb-4 flex items-center">
                         {t('rights')}
-                        <Image width={20} height={20} src="/logo.png" alt="portfolio img" className="mx-2" />
+                        <Image width={20} height={20} src="/logo.webp" alt="portfolio img" className="mx-2" />
                         {t('company')} &copy; {currentYear}
                     </p>
                     <ul className="flex space-x-4">

@@ -19,7 +19,7 @@ const About: React.FC = async () => {
                     <div className="avatar">
                         <div className="w-28 rounded-full">
                             <Image
-                                src="/images/portfolio-foto.png"
+                                src="/images/portfolio-foto.webp"
                                 alt="Profile"
                                 priority={true}
                                 quality={100}
