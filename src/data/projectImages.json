@@ -1,0 +1,84 @@
+{
+  "casero": [
+    "/images/projects-images/casero/casero1.png",
+    "/images/projects-images/casero/casero10.png",
+    "/images/projects-images/casero/casero11.png",
+    "/images/projects-images/casero/casero2.png",
+    "/images/projects-images/casero/casero3.png",
+    "/images/projects-images/casero/casero4.png",
+    "/images/projects-images/casero/casero5.png",
+    "/images/projects-images/casero/casero6.png",
+    "/images/projects-images/casero/casero7.png",
+    "/images/projects-images/casero/casero8.png",
+    "/images/projects-images/casero/casero9.png",
+    "/images/projects-images/casero/logo.png"
+  ],
+  "casero_server": [
+    "/images/projects-images/casero_server/casero_server1.png",
+    "/images/projects-images/casero_server/casero_server2.png",
+    "/images/projects-images/casero_server/casero_server3.png",
+    "/images/projects-images/casero_server/casero_server4.png",
+    "/images/projects-images/casero_server/casero_server5.png"
+  ],
+  "cloud_scrapy": [
+    "/images/projects-images/cloud_scrapy/cloud_scrapy1.png",
+    "/images/projects-images/cloud_scrapy/cloud_scrapy2.png",
+    "/images/projects-images/cloud_scrapy/cloud_scrapy3.png",
+    "/images/projects-images/cloud_scrapy/cloud_scrapy4.png",
+    "/images/projects-images/cloud_scrapy/logo.png"
+  ],
+  "conservador_trinidad": [
+    "/images/projects-images/conservador_trinidad/conservador_trinidad1.png",
+    "/images/projects-images/conservador_trinidad/conservador_trinidad2.png",
+    "/images/projects-images/conservador_trinidad/conservador_trinidad3.png",
+    "/images/projects-images/conservador_trinidad/conservador_trinidad4.png",
+    "/images/projects-images/conservador_trinidad/conservador_trinidad5.png",
+    "/images/projects-images/conservador_trinidad/logo.png"
+  ],
+  "dememo": [
+    "/images/projects-images/dememo/dememo1.png",
+    "/images/projects-images/dememo/dememo2.png",
+    "/images/projects-images/dememo/dememo3.png",
+    "/images/projects-images/dememo/dememo4.png",
+    "/images/projects-images/dememo/dememo5.png",
+    "/images/projects-images/dememo/dememo6.png",
+    "/images/projects-images/dememo/dememo7.png",
+    "/images/projects-images/dememo/dememo8.png",
+    "/images/projects-images/dememo/dememo9.png",
+    "/images/projects-images/dememo/logo.png"
+  ],
+  "find_my_phrase": [
+    "/images/projects-images/find_my_phrase/find_my_phrase1.png",
+    "/images/projects-images/find_my_phrase/find_my_phrase2.png",
+    "/images/projects-images/find_my_phrase/find_my_phrase3.png",
+    "/images/projects-images/find_my_phrase/find_my_phrase4.png",
+    "/images/projects-images/find_my_phrase/logo.png"
+  ],
+  "power_off": [
+    "/images/projects-images/power_off/logo.png",
+    "/images/projects-images/power_off/power_off1.png",
+    "/images/projects-images/power_off/power_off2.png",
+    "/images/projects-images/power_off/power_off3.png",
+    "/images/projects-images/power_off/power_off4.png"
+  ],
+  "recargame_app": [
+    "/images/projects-images/recargame_app/logo.png",
+    "/images/projects-images/recargame_app/recargame_app1.png",
+    "/images/projects-images/recargame_app/recargame_app2.png",
+    "/images/projects-images/recargame_app/recargame_app3.png",
+    "/images/projects-images/recargame_app/recargame_app4.png",
+    "/images/projects-images/recargame_app/recargame_app5.png",
+    "/images/projects-images/recargame_app/recargame_app6.png",
+    "/images/projects-images/recargame_app/recargame_app7.png",
+    "/images/projects-images/recargame_app/recargame_app8.png"
+  ],
+  "sisga": [
+    "/images/projects-images/sisga/logo.png",
+    "/images/projects-images/sisga/sisga1.png",
+    "/images/projects-images/sisga/sisga2.png",
+    "/images/projects-images/sisga/sisga3.png",
+    "/images/projects-images/sisga/sisga4.png",
+    "/images/projects-images/sisga/sisga5.png",
+    "/images/projects-images/sisga/sisga6.png"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "HomePage": {
+    "HeaderSection": {
+      "resume": "Resume",
+      "about": "About",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "home": "Home"
+    },
+    "HeroSection": {
+      "name": "José Ernesto Cortes",
+      "companyName": "CorteStudios",
+      "description": "Software engineer with over 5 years of experience, eager to learn every day and excel through new challenges.",
+      "downloadCv": "Download CV",
+      "TypedSubtitle": {
+        "title1": "Software Development",
+        "title2": "Mobile Development",
+        "title3": "Full Stack Development"
+      }
+    },
+    "SummarizeSection": {
+      "title": "WHAT I CAN DO",
+      "works": {
+        "desktop": {
+          "title": "Desktop Software",
+          "description": "Development of cross-platform desktop software with Java Swing and JavaFX"
+        },
+        "mobile": {
+          "title": "Mobile Development",
+          "description": "Development of native applications for the Android operating system with Java and Kotlin"
+        },
+        "web": {
+          "title": "Web Development",
+          "description": "Development of web applications with Spring Boot, React JS, and other web technologies"
+        },
+        "games": {
+          "title": "Game Creation",
+          "description": "I enjoy learning and working as a hobby in independent game development with Unity"
+        }
+      }
+    },
+    "AboutSection": {
+      "title": "ABOUT ME",
+      "subtitle": "DESIGN & DEVELOPMENT",
+      "description": "I am a Software Engineer with over 4 years of experience in Android mobile development, cross-platform desktop application development, and Full Stack web development. I enjoy studying independently and learning new ways of doing things, new challenges that always allow me to put into practice any knowledge I have acquired or am learning. I have developed software mostly with Java in various environments, although I have used other languages and frameworks such as Javascript and ReactJs/NextJs/ExpressJs, Kotlin and Java for Android, Python and FastApi, among others. I don't professionally develop games, but I greatly enjoy learning C# and Unity as a hobby. I believe that technologies are truly negotiable, that we should use them conveniently to solve our tasks in the most efficient way, it's not necessary to learn them all, nor just one that works like a Swiss army knife, we should learn what is required for the project depending on its functional requirements."
+    },
+    "PortfolioSection": {
+      "title": "PORTFOLIO"
+    },
+    "ContactSection": {
+      "title": "CONTACT",
+      "phone": "+34 643 52 1716",
+      "email": "jecortes2304@gmail.com",
+      "address": "Calle Barlovento #5, Madrid",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "SEND",
+        "successMessage": "Message sent successfully",
+        "errorMessage": "Error sending message",
+        "errorName": "Name is required",
+        "errorEmail": "Email is required",
+        "errorEmailFormat": "Invalid email format",
+        "errorSubject": "Subject is required",
+        "errorMessageRequired": "Message is required"
+      }
+    },
+    "FooterSection": {
+      "rights": "All rights reserved",
+      "company": "CorteStudios"
+    }
+  },
+  "DetailsPage": {
+    "ProjectGallery": {
+      "bannerAlt": "{projectName} banner",
+      "imageCaption": "{projectName} image {index}",
+      "imageAlt": "{projectName} image {index}"
+    },
+    "InfoProjectSection": {
+      "logo": "Logo",
+      "logoAlt": "Project logo",
+      "type": "Type",
+      "status": "Status",
+      "github": "GitHub",
+      "repositoryUrl": "Repository URL",
+      "published": "Published",
+      "publishUrl": "Publish URL",
+      "technologies": "Technologies",
+      "description": "Description"
+    }
+  }
+}

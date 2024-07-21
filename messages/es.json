@@ -1,0 +1,94 @@
+{
+  "HomePage": {
+    "HeaderSection": {
+      "resume": "Resumen",
+      "about": "Acerca de",
+      "portfolio": "Portafolio",
+      "contact": "Contacto",
+      "home": "Inicio"
+    },
+    "HeroSection": {
+      "name": "José Ernesto Cortes",
+      "companyName": "CorteStudios",
+      "description": "Ingeniero de software con más de 5 años de experiencia, con ganas de aprender cada día y superarme mediante nuevos desafíos.",
+      "downloadCv": "Descargar CV",
+      "TypedSubtitle": {
+        "title1": "Desarrollo de software",
+        "title2": "Desarrollo Móvil",
+        "title3": "Desarrollo Full Stack"
+      }
+    },
+    "SummarizeSection": {
+      "title": "QUE PUEDO HACER",
+      "works": {
+        "desktop": {
+          "title": "Software Escritorio",
+          "description": "Desarrollo de software de escritorio multiplataforma con Java Swing y Javafx"
+        },
+        "mobile": {
+          "title": "Desarrollo Móvil",
+          "description": "Desarrollo de aplicaciones nativas para el sistema operativo Android con Java y Kotlin"
+        },
+        "web": {
+          "title": "Desarrollo Web",
+          "description": "Desarrollo de aplicaciones web con Spring Boot, React JS, y otras tecnologías web"
+        },
+        "games": {
+          "title": "Creación de Juegos",
+          "description": "Disfruto aprender y trabajar como hobby en el desarrollo independiente de juegos con Unity"
+        }
+      }
+    },
+    "AboutSection": {
+      "title": "ACERCA DE MÍ",
+      "subtitle": "DISEÑO & DESARROLLO",
+      "description": "Soy Ingeniero de Software con más de 4 años de experiencia en el desarrollo móvil para Android, desarrollo multiplataforma de aplicaciones de escritorio y desarrollo web Full Stack. Disfruto estudiar en solitario y aprender nuevas formas de hacer las cosas, nuevos retos que siempre me permitan poner en práctica cualquier conocimiento que haya adquirido o esté aprendiendo. He desarrollado software mayormente con Java en varios entornos, aunque he usado otros lenguajes y frameworks como Javascript y ReactJs/NextJs/ExpressJs, Kotlin y Java para Android, Python y FastApi, entre otros. No me dedico profesionalmente a desarrollar juegos, pero disfruto mucho aprendiendo como hobby C# y Unity. Pienso que las tecnologías son realmente negociables, que debemos usarlas a conveniencia para solucionar nuestras tareas de la manera más eficiente, no es necesario aprenderlas todas, tampoco solo una que funcione como una navaja suiza, debemos aprender la que se requiere para el proyecto dependiendo de sus requisitos funcionales."
+    },
+    "PortfolioSection": {
+      "title": "PORTAFOLIO"
+    },
+    "ContactSection": {
+      "title": "CONTACTAR",
+      "phone": "+34 643 52 1716",
+      "email": "jecortes2304@gmail.com",
+      "address": "Calle Barlovento #5, Madrid",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "subject": "Asunto",
+        "message": "Mensaje",
+        "send": "ENVIAR",
+        "successMessage": "Mensaje enviado con éxito",
+        "errorMessage": "Error al enviar el mensaje",
+        "errorName": "El nombre es requerido",
+        "errorEmail": "El correo electrónico es requerido",
+        "errorEmailFormat": "El formato del correo electrónico no es válido",
+        "errorSubject": "El asunto es requerido",
+        "errorMessageRequired": "El mensaje es requerido"
+      }
+    },
+    "FooterSection": {
+      "rights": "Todos los derechos reservados",
+      "company": "CorteStudios"
+    }
+  },
+  "DetailsPage": {
+    "ProjectGallery": {
+      "bannerAlt": "Banner de {projectName}",
+      "imageCaption": "Imagen {index} de {projectName}",
+      "imageAlt": "Imagen {index} de {projectName}"
+    },
+    "InfoProjectSection": {
+      "logo": "Logo",
+      "logoAlt": "Logo del proyecto",
+      "type": "Tipo",
+      "status": "Estado",
+      "github": "GitHub",
+      "repositoryUrl": "URL del repositorio",
+      "published": "Publicado",
+      "publishUrl": "URL de publicación",
+      "technologies": "Tecnologías",
+      "description": "Descripción"
+    }
+  }
+}

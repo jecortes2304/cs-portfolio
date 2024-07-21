@@ -1,0 +1,45 @@
+{
+  "name": "cs-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "node src/scripts/generateProjectImages.js",
+    "dev": "next dev -p 5000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.4",
+    "@react-email/button": "^0.0.15",
+    "@react-email/container": "^0.0.12",
+    "@react-email/heading": "^0.0.12",
+    "@react-email/hr": "^0.0.8",
+    "@react-email/html": "^0.0.8",
+    "@react-email/render": "^0.0.16",
+    "@react-email/section": "^0.0.12",
+    "@react-email/text": "^0.0.8",
+    "cookies-next": "^4.2.1",
+    "lottie-web": "^5.12.2",
+    "next": "14.2.4",
+    "next-intl": "^3.17.2",
+    "nodemailer": "^6.9.14",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-photoswipe-gallery": "^3.0.1",
+    "react-typed": "^2.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.15",
+    "@types/photoswipe": "^4.1.6",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "daisyui": "^4.12.10",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
