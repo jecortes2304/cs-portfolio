@@ -11,7 +11,7 @@ export async function POST(request: Request) {
         const body: FormDataEmail = await request.json();
 
         const response = await sendEmail({
-            to: body.email,
+            from: body.email,
             subject: "Hellooo!",
             html: render(ContactEmailTemplate(
                 {

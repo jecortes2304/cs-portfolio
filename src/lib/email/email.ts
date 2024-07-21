@@ -2,7 +2,7 @@ import nodemailer from "nodemailer"
 import {getEnvsEmail} from "@/config/Settings";
 
 type EmailPayload = {
-    to: string
+    from: string
     subject: string
     html: string
 }
@@ -35,7 +35,7 @@ export const sendEmail = async (data: EmailPayload) => {
     })
 
     return await transporter.sendMail({
-        from: smtpFromEmail,
+        to: smtpFromEmail,
         ...data,
     })
 }
