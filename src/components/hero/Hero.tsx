@@ -5,7 +5,12 @@ import React from "react";
 import { getEnvsDrive } from "@/config/Settings";
 import Link from "next/link";
 import { getLocale, getTranslations } from "next-intl/server";
-import Head from "next/head";
+
+export const metadata = {
+    title: 'Hero Section',
+    description: 'Hero section of the home page.',
+};
+
 
 const Hero: React.FC = async () => {
     const { urlPortfolioEs, urlPortfolioEn } = getEnvsDrive();
@@ -14,22 +19,15 @@ const Hero: React.FC = async () => {
 
     return (
         <>
-            <Head>
-                <link
-                    rel="preload"
-                    href="/images/home-bg.webp"
-                    as="image"
-                />
-            </Head>
             <section id={"hero"} className="hero">
                 <div className="hero min-h-screen relative">
                     <Image
                         src="/images/home-bg.webp"
                         alt="Background"
-                        layout="fill"
-                        objectFit="cover"
+                        fill
+                        style={{ objectFit: "cover" }}
                         quality={70}
-                        priority
+                        loading={"lazy"}
                         placeholder="blur"
                         blurDataURL="/images/home-bg-lower.webp"
                     />

@@ -17,10 +17,10 @@ const ProjectContainer: React.FC<ProjectProps> = async ({project}: {project: Pro
             <Image
                 src={project.bannerPath}
                 alt={project.name}
-                priority={true}
-                quality={100}
-                width={1600}
-                height={900}
+                loading={"lazy"}
+                quality={30}
+                width={800}
+                height={640}
                 className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="glassy absolute lg:inset-5 inset-1.5 rounded-2xl bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">

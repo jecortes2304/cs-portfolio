@@ -90,7 +90,7 @@ const ProjectsData: ProjectSchema [] = [
         "publishUrl": "https://play.google.com/store/apps/details?id=com.erg.memorized",
         "status": "finished",
         "techStack": ["Java", "Firebase", "Realm", "Android SDK"],
-        "description": "Dememo fue un proyecto en conjunto donde fui coautor, la idea original fue concebida por el Ing. Elioenai Reyes González (https://www.linkedin.com/in/elioenai-reyes-gonzález/) como parte de un proyecto para el movimiento cristiano."
+        "description": "Dememo fue un proyecto en conjunto donde fui coautor, la idea original fue concebida por el Ing. Elioenai Reyes González https://www.linkedin.com/in/elioenai-reyes-gonzález como parte de un proyecto para el movimiento cristiano."
     },
     {
         "id": 8,
@@ -117,6 +117,19 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["NodeJs", "Web Scraping", "Express", "Puppeteer", "Mongo DB", "Redis", "Swagger", "Javascript", "Docker/docker-compose"],
         "description": "CloudScrapy es un API-Rest que permite controlar un navegador sin cabeza en un servidor mediante llamadas http a la API, este permite al usuario hacer scraping web, hacer capturas de pantallas y ejecutar instrucciones lo que permite dinamizar la navegación, además, permite hacer ejecuciones para solucionar acciones requeridas, entre otras cosas más. Surge con la idea de abstraer toda la lógica, complejidad y la configuración en un servidor así como el consumo de recursos de las aplicaciones que necesiten usarla. Posee una licencia ISC, puedes visitar el repositorio de github y leer parte de la documentación si le interesa."
+    },
+    {
+        "id": 10,
+        "name": "Unnax Payment Gateway",
+        "type": "web",
+        "bannerPath": "/images/banners/unnax_payment_gateway_banner.webp",
+        "logoPath": "/images/projects-images/unnax_payment_gateway/logo.webp",
+        "imagesPath": "/images/projects-images/unnax_payment_gateway/",
+        "repositoryUrl": "",
+        "publishUrl": "",
+        "status": "finished",
+        "techStack": ["PHP", "WordPress", "WooCommerce", "REST API", "JavaScript", "cURL", "MySQL", "HTML", "CSS", "React", "NodeJs"],
+        "description": "Este proyecto es un plugin de WordPress y WooCommerce desarrollado en colaboración con los ingenieros Diony Castillo Rodríguez https://www.linkedin.com/in/diony-castillo y Javier Ojeda Rodríguez https://www.linkedin.com/in/javieralejandroojedarodríguez, que permite la integración rápida y eficiente del API de pago de Unnax SL. Está diseñado para facilitar a los comercios electrónicos la implementación de pasarelas de pago seguras y rápidas, optimizando así la experiencia de usuario en el proceso de compra. El plugin ofrece un método sencillo de integración sin necesidad de manejar la complejidad técnica del API, proporcionando un flujo de trabajo fluido para los desarrolladores y comerciantes."
     }
 ]
 

@@ -80,5 +80,13 @@
     "/images/projects-images/sisga/sisga4.webp",
     "/images/projects-images/sisga/sisga5.webp",
     "/images/projects-images/sisga/sisga6.webp"
+  ],
+  "unnax_payment_gateway": [
+    "/images/projects-images/unnax_payment_gateway/logo.webp",
+    "/images/projects-images/unnax_payment_gateway/unnax_payment_gateway1.webp",
+    "/images/projects-images/unnax_payment_gateway/unnax_payment_gateway2.webp",
+    "/images/projects-images/unnax_payment_gateway/unnax_payment_gateway3.webp",
+    "/images/projects-images/unnax_payment_gateway/unnax_payment_gateway4.webp",
+    "/images/projects-images/unnax_payment_gateway/unnax_payment_gateway5.webp"
   ]
 }

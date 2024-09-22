@@ -12,19 +12,23 @@ function getSkillsList() {
 const About: React.FC = async () => {
     const t = await getTranslations('HomePage.AboutSection');
 
+    const getSkillsListOrdered = () => {
+        return getSkillsList().sort((a, b) => b.percent - a.percent);
+    }
+
     return (
         <div id="about" className="bg-gray-900 py-16">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center mb-5">
                     <div className="avatar">
-                        <div className="w-28 rounded-full">
+                        <div className="w-40 rounded-full">
                             <Image
                                 src="/images/portfolio-foto.webp"
                                 alt="Profile"
-                                priority={true}
+                                loading={"lazy"}
                                 quality={100}
-                                width={200}
-                                height={200}
+                                width={600}
+                                height={600}
                             />
                         </div>
                     </div>
@@ -37,7 +41,7 @@ const About: React.FC = async () => {
                 </div>
 
                 <div className="flex flex-wrap -mx-2">
-                    {getSkillsList().map((skill, index) => (
+                    {getSkillsListOrdered().map((skill, index) => (
                         <SkillContainer key={index} name={skill.name} percent={skill.percent} />
                     ))}
                 </div>
