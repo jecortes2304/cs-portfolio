@@ -60,7 +60,7 @@ export default function GalleryClient({projectName, bannerPath, projectType}: Ga
                         alt={`${projectName} banner`}
                         width={1000}
                         height={600}
-                        onLoadingComplete={() => setIsLoading(false)}
+                        onLoad={() => setIsLoading(false)}
                     />
                 )}
             </Item>

@@ -1,7 +1,7 @@
 import {redirect} from 'next/navigation';
-import {useLocale} from "next-intl";
+import {getLocale} from "next-intl/server";
 
-export default function RootPage() {
-    const locale = useLocale();
+export default async function RootPage() {
+    const locale = getLocale;
     redirect(`/${locale}`);
 }

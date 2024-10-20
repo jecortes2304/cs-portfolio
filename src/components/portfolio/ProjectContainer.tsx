@@ -30,7 +30,7 @@ const ProjectContainer: React.FC<ProjectProps> =  ({project}: {project: ProjectS
                 width={800}
                 height={640}
                 className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
-                onLoadingComplete={() => setLoading(false)}
+                onLoad={() => setLoading(false)}
             />
             <div className="glassy absolute lg:inset-5 inset-1.5 rounded-2xl bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                 <div className="p-4 rounded-lg">
