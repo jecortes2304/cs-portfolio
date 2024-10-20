@@ -90,5 +90,9 @@
       "technologies": "Tecnologías",
       "description": "Descripción"
     }
+  },
+  "NotFoundPage": {
+    "message": "Página no encontrada",
+    "description": "La página que estás buscando no existe o ha sido movida. Por favor, verifica la URL e inténtalo de nuevo."
   }
 }

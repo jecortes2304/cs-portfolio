@@ -1,4 +1,4 @@
-import { Details, GenericResponse } from "@/schemas/GenericSchemas";
+import { GenericResponse } from "@/schemas/GenericSchemas";
 
 export type ProjectType = "mobile" | "web" | "desktop" | "game" | "other";
 export type ProjectStatus = "finished" | "inProgress" | "pending" | "discontinued";
@@ -14,11 +14,8 @@ export interface ProjectSchema{
     publishUrl: string
     status: ProjectStatus
     techStack: string []
-    description: string
-}
-
-export interface ProjectImagesSchema {
-    [projectName: string]: string[];
+    descriptionEs: string
+    descriptionEn: string
 }
 
 export interface ProjectGetAll extends GenericResponse{

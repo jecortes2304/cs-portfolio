@@ -4,7 +4,8 @@ import {ProjectSchema} from "@/schemas/ProjectSchemas";
 import StatusIconFactory from "@/components/helpers/StatusIconFactory";
 import {DeviceIconFactory, renderIcon} from "@/components/helpers/DeviceIconFactory";
 import Link from "next/link";
-import { useTranslations } from 'next-intl';
+import {useTranslations} from 'next-intl';
+import DescriptionSection from "@/components/details/DescriptionSection";
 
 const LinkIcon = ({url, title, path}: { url: string, title: string, path: string }) => {
     return (
@@ -26,18 +27,6 @@ const DetailItem = ({label, value, icon,}: { label: string, value?: string, icon
 
 const InfoProjectSection: React.FC<{ project: ProjectSchema }> = ({project}: { project: ProjectSchema }) => {
     const t = useTranslations('DetailsPage.InfoProjectSection');
-
-    const addLinksIfExists = (description: string) => {
-        const regex = /https?:\/\/[^\s,]+/g;
-        const urls = description.match(regex);
-        if (urls) {
-            urls.forEach(url => {
-                description = description.replace(url, `<a class="text-blue-500" href="${url}" target="_blank">(Linkedin)</a>` );
-            });
-        }
-        return description;
-    };
-
 
     return (
         <div className="md:w-1/2 space-y-6">
@@ -71,10 +60,7 @@ const InfoProjectSection: React.FC<{ project: ProjectSchema }> = ({project}: { p
             }
 
             <DetailItem label={t('technologies')} value={project.techStack.join(', ')}/>
-            <div className={""}>
-                <h4 className="text-sm lg:text-lg font-semibold mb-2">{t('description')}:</h4>
-                <p className="text-justify text-sm text-gray-400" dangerouslySetInnerHTML={{ __html: addLinksIfExists(project.description) }} />
-            </div>
+            <DescriptionSection project={project}/>
         </div>
     )
 }

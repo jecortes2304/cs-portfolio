@@ -91,7 +91,7 @@ const Header: React.FC = () => {
                             </svg>
                         </div>
                         <ul tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-4 z-[1] p-2 shadow bg-[#222426] rounded-box w-52 gap-2">
+                            className="menu menu-sm dropdown-content mt-5 z-[1] p-2 shadow bg-[#222426] rounded-box w-52 gap-2">
                             <li className="text-white mt-2">
                                 <Link href={"#hero"} onClick={(e) => handleScroll(e, '#hero')}>{t('home')}</Link>
                             </li>
@@ -112,7 +112,6 @@ const Header: React.FC = () => {
                             </li>
                             <div className={"divider divider-vertical"}>
                                 <LanguageToggle/>
-
                             </div>
                         </ul>
                     </div>

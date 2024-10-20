@@ -42,6 +42,7 @@ export default function GalleryClient({projectName, bannerPath, projectType}: Ga
                 thumbnail={bannerPath}
                 width={1000}
                 height={670}
+                caption={`${projectName} banner`}
             >
                 {({ref, open}) => (
                     isLoading ?
@@ -59,6 +60,7 @@ export default function GalleryClient({projectName, bannerPath, projectType}: Ga
                         alt={`${projectName} banner`}
                         width={1000}
                         height={600}
+                        onLoadingComplete={() => setIsLoading(false)}
                     />
                 )}
             </Item>

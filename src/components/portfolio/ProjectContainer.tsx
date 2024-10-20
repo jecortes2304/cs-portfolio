@@ -1,19 +1,27 @@
+"use client";
 import {ProjectSchema} from "@/schemas/ProjectSchemas";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import {DeviceIconFactory} from "@/components/helpers/DeviceIconFactory";
-import {getLocale} from "next-intl/server";
+import {useLocale} from "next-intl";
 
 interface ProjectProps {
     project: ProjectSchema;
 }
 
-const ProjectContainer: React.FC<ProjectProps> = async ({project}: {project: ProjectSchema} ) => {
-    const locale = await getLocale();
+const ProjectContainer: React.FC<ProjectProps> =  ({project}: {project: ProjectSchema} ) => {
+    const locale = useLocale();
+    const [loading, setLoading] = useState<boolean>(true);
 
     return (
         <div className="relative group overflow-hidden rounded-lg">
+            {loading && (
+                <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
+                    <span
+                        className="loading loading-ring loading-lg inset-0 flex items-center justify-center"></span>
+                </div>
+            )}
             <Image
                 src={project.bannerPath}
                 alt={project.name}
@@ -22,6 +30,7 @@ const ProjectContainer: React.FC<ProjectProps> = async ({project}: {project: Pro
                 width={800}
                 height={640}
                 className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
+                onLoadingComplete={() => setLoading(false)}
             />
             <div className="glassy absolute lg:inset-5 inset-1.5 rounded-2xl bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                 <div className="p-4 rounded-lg">
