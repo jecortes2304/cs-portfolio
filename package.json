@@ -21,7 +21,7 @@
     "@react-email/text": "^0.0.8",
     "cookies-next": "^4.2.1",
     "lottie-web": "^5.12.2",
-    "next": "14.2.4",
+    "next": "14.2.15",
     "next-intl": "^3.17.2",
     "nodemailer": "^6.9.14",
     "react": "^18",

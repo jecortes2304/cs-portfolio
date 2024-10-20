@@ -1,4 +1,3 @@
-'use client';
 import AnimatorRender from "@/components/animations/AnimnationRender";
 import errorPageJson from "@/components/animations/error_page.json";
 import Link from "next/link";
