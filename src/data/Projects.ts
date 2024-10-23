@@ -40,7 +40,7 @@ const ProjectsData: ProjectSchema [] = [
         "publishUrl": "",
         "status": "finished",
         "techStack": ["C#", "Windows Form"],
-        "descriptionEs": "Power Off permite reocrrer todos los equipos de una LAN para ejecutar comandos o automatizar los mismos mediante una interfaz sencilla y cómoda",
+        "descriptionEs": "Power Off permite recorrer todos los equipos de una LAN para ejecutar comandos o automatizar los mismos mediante una interfaz sencilla y cómoda",
         "descriptionEn": "Power Off allows you to scan all devices on a LAN to execute or automate commands using a simple and user-friendly interface."
     },
     {
@@ -68,7 +68,7 @@ const ProjectsData: ProjectSchema [] = [
         "publishUrl": "",
         "status": "finished",
         "techStack": ["Kotlin", "Android SDK"],
-        "descriptionEs": "Conservador Trinidad sirve como una herrmamienta promocional de la empresa Oficina del Conservador de Trinidad, además brinda funcionalidades para las inscripciones de eventos relacionados a la entidad.",
+        "descriptionEs": "Conservador Trinidad sirve como una herramienta promocional de la empresa Oficina del Conservador de Trinidad, además brinda funcionalidades para las inscripciones de eventos relacionados a la entidad.",
         "descriptionEn": "Conservador Trinidad serves as a promotional tool for the Office of the Conservator of Trinidad and provides functionalities for event registrations related to the entity."
     },
     {
@@ -82,7 +82,7 @@ const ProjectsData: ProjectSchema [] = [
         "publishUrl": "https://play.google.com/store/apps/details?id=com.cortestudios.recargameapp",
         "status": "finished",
         "techStack": ["Java", "Room", "Android SDK"],
-        "descriptionEs": "Recárgame App fue desarrollada como parte del encargo de un cliente para gestionar las facturas y transferencias del sistema de dicha compañia(Recárgame), permitiendo la sincronizacion local y online de los datos.",
+        "descriptionEs": "Recárgame App fue desarrollada como parte del encargo de un cliente para gestionar las facturas y transferencias del sistema de dicha compañía (Recárgame), permitiendo la sincronización local y online de los datos.",
         "descriptionEn": "Recárgame App was developed as part of a client's request to manage invoices and transfers for the company's system (Recárgame), enabling both local and online data synchronization."
     },
     {
@@ -96,7 +96,7 @@ const ProjectsData: ProjectSchema [] = [
         "publishUrl": "https://play.google.com/store/apps/details?id=com.erg.memorized",
         "status": "finished",
         "techStack": ["Java", "Firebase", "Realm", "Android SDK"],
-        "descriptionEs": "Dememo fue un proyecto en conjunto donde fui coautor, la idea original fue concebida por el Ing. Elioenai Reyes González https://www.linkedin.com/in/elioenai-reyes-gonzález como parte de un proyecto para el movimiento cristiano.",
+        "descriptionEs": "Dememo fue un proyecto en conjunto donde fui colaborador, la idea original fue concebida por el Ing. Elioenai Reyes González https://www.linkedin.com/in/elioenai-reyes-gonzález como parte de un proyecto para el movimiento cristiano.",
         "descriptionEn": "Dememo was a collaborative project where I was a co-author. The original idea was conceived by Engineer Elioenai Reyes González (https://www.linkedin.com/in/elioenai-reyes-gonzález) as part of a project for the Christian movement."
     },
     {
