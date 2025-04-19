@@ -2,9 +2,13 @@
 import React, {useState, useEffect, useCallback, useRef, useMemo} from 'react';
 import {sendEmail} from "@/lib/request/email/sendEmail";
 import {FormDataEmail, FormDataEmailErrors} from "@/schemas/EmailSchemas";
-import AnimnationRender from "@/components/animations/AnimnationRender";
 import sendingJsonAnim from "@/components/animations/sending.json";
 import { useTranslations } from 'next-intl';
+import dynamic from "next/dynamic";
+
+const AnimatorRender = dynamic(() => import('@/components/animations/AnimnationRender'), {
+    ssr: false,
+});
 
 export default function FormContact() {
     const t = useTranslations('HomePage.ContactSection.form');
@@ -158,7 +162,7 @@ export default function FormContact() {
 
                 {isLoading ? (
                     <div className="w-full h-[80px] flex items-center justify-center">
-                        <AnimnationRender animJson={sendingJsonAnim} height={50} width={50} vis={isLoading ? "visible" : "hidden"}/>
+                        <AnimatorRender animJson={sendingJsonAnim} height={50} width={50} vis={isLoading ? "visible" : "hidden"}/>
                     </div>
                 ): (
                     <button

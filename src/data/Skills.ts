@@ -4,7 +4,7 @@ const SkillsData: SkillSchema[] = [
     {
         "id": 1,
         "name": "Java",
-        "percent": 88,
+        "percent": 90,
     },
     {
         "id": 2,
@@ -44,7 +44,7 @@ const SkillsData: SkillSchema[] = [
     {
         "id": 9,
         "name": "Scraping Web",
-        "percent": 84,
+        "percent": 78,
     },
     {
         "id": 10,
@@ -69,12 +69,12 @@ const SkillsData: SkillSchema[] = [
     {
         "id": 14,
         "name": "React Js",
-        "percent": 78,
+        "percent": 80,
     },
     {
         "id": 15,
         "name": "Express JS",
-        "percent": 82,
+        "percent": 79,
     },
     {
         "id": 16,
@@ -89,7 +89,7 @@ const SkillsData: SkillSchema[] = [
     {
         "id": 18,
         "name": "Android SDK",
-        "percent": 81,
+        "percent": 79,
     },
     {
         "id": 19,
@@ -134,7 +134,7 @@ const SkillsData: SkillSchema[] = [
     {
         "id": 27,
         "name": "Go",
-        "percent": 39,
+        "percent": 78,
     },
     {
         "id": 28,

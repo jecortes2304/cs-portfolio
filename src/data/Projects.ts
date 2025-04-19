@@ -140,7 +140,22 @@ const ProjectsData: ProjectSchema [] = [
         "techStack": ["PHP", "WordPress", "WooCommerce", "REST API", "JavaScript", "cURL", "MySQL", "HTML", "CSS", "React", "NodeJs"],
         "descriptionEs": "Este proyecto es un plugin de WordPress y WooCommerce desarrollado en colaboración con los ingenieros Diony Castillo Rodríguez https://www.linkedin.com/in/diony-castillo y Javier Ojeda Rodríguez https://www.linkedin.com/in/javieralejandroojedarodríguez, que permite la integración rápida y eficiente del API de pago de Unnax SL. Está diseñado para facilitar a los comercios electrónicos la implementación de pasarelas de pago seguras y rápidas, optimizando así la experiencia de usuario en el proceso de compra. El plugin ofrece un método sencillo de integración sin necesidad de manejar la complejidad técnica del API, proporcionando un flujo de trabajo fluido para los desarrolladores y comerciantes.",
         "descriptionEn": "This project is a WordPress and WooCommerce plugin developed in collaboration with engineers Diony Castillo Rodríguez (https://www.linkedin.com/in/diony-castillo) and Javier Ojeda Rodríguez (https://www.linkedin.com/in/javieralejandroojedarodríguez), which allows fast and efficient integration of the Unnax SL payment API. It is designed to facilitate e-commerce merchants in implementing secure and quick payment gateways, optimizing the user experience during the checkout process. The plugin offers a simple integration method without the need to handle the technical complexity of the API, providing a smooth workflow for developers and merchants."
-    }
+    },
+    {
+        "id": 11,
+        "name": "Simple Todo",
+        "type": "web",
+        "bannerPath": "/images/banners/simple_todo_banner.webp",
+        "logoPath": "/images/projects-images/simple_todo/logo.webp",
+        "imagesPath": "/images/projects-images/simple_todo/",
+        "repositoryUrl": "https://github.com/jecortes2304/SimpleToDo",
+        "publishUrl": "https://github.com/jecortes2304/SimpleToDo/releases",
+        "status": "finished",
+        "techStack": ["Go", "Echo", "Gorm", "React", "Typescript", "Sqlite", "Github Actions", "Tailwind", "DaisyUi", "Vite"],
+        "descriptionEs": "Simple Todo es una aplicación web que permite gestionar tareas de manera sencilla y eficiente. Desarrollada con Go en el backend y React en el frontend, esta aplicación utiliza una arquitectura RESTful para la comunicación entre el cliente y el servidor. La interfaz de usuario es intuitiva y está diseñada para facilitar la creación, edición y eliminación de tareas. Además, cuenta con un sistema de autenticación para garantizar la seguridad de los datos del usuario. La aplicación se despliega utilizando Github Actions, lo que permite una integración continua y un flujo de trabajo ágil. La base de datos se gestiona con Sqlite, y se compila a un archivo binario único, lo que facilita su distribución y ejecución en diferentes entornos. La aplicación está diseñada para ser ligera y rápida, ofreciendo una experiencia de usuario fluida y sin complicaciones.",
+        "descriptionEn": "Simple Todo is a web application that allows users to manage tasks in a simple and efficient manner. Developed with Go on the backend and React on the frontend, this application utilizes a RESTful architecture for communication between the client and server. The user interface is intuitive and designed to facilitate the creation, editing, and deletion of tasks. Additionally, it features an authentication system to ensure the security of user data. The application is deployed using GitHub Actions, enabling continuous integration and an agile workflow. The database is managed with SQLite, and it compiles into a single binary file, making it easy to distribute and run in different environments. The application is designed to be lightweight and fast, providing a smooth and hassle-free user experience."
+    },
+
 ]
 
 export default ProjectsData;

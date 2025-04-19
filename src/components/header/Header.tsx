@@ -11,15 +11,20 @@ const Header: React.FC = () => {
     const handleScroll = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
         const targetId = href.replace(/.*#/, "");
-        const elem = document.getElementById(targetId);
-        elem?.scrollIntoView({ behavior: "smooth" });
+        if (typeof window !== 'undefined') {
+            const elem = document.getElementById(targetId);
+            elem?.scrollIntoView({ behavior: "smooth" });
+        }
     }, []);
 
     useEffect(() => {
-        const links = document.querySelectorAll('header a[href^="#"]');
-        links.forEach(link => {
-            link.addEventListener('click', (e) => handleScroll(e as any, (e.currentTarget as HTMLAnchorElement).getAttribute('href') || ''));
-        });
+        let links: NodeListOf<HTMLAnchorElement>;
+        if (typeof window !== 'undefined') {
+            links = document.querySelectorAll('header a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', (e) => handleScroll(e as any, (e.currentTarget as HTMLAnchorElement).getAttribute('href') || ''));
+            });
+        }
 
         return () => {
             links.forEach(link => {

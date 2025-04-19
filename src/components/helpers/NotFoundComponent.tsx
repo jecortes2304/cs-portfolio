@@ -1,4 +1,5 @@
-import AnimatorRender from "@/components/animations/AnimnationRender";
+"use client"
+import dynamic from "next/dynamic";
 import errorPageJson from "@/components/animations/error_page.json";
 import Link from "next/link";
 import {HomeIcon} from "@heroicons/react/24/outline";
@@ -8,12 +9,15 @@ interface NotFoundComponentProps {
     description: string;
     message: string;
 }
-
+const AnimatorRender = dynamic(() => import('@/components/animations/AnimnationRender'), {
+    ssr: false,
+});
 
 const NotFoundComponent: React.FC<NotFoundComponentProps> = ({
     description,
     message,
                                                              }) => {
+
 
     return (
         <div className="container mx-auto text-center justify-center">

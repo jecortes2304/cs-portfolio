@@ -35,6 +35,7 @@ const InfoProjectSection: React.FC<{ project: ProjectSchema }> = ({project}: { p
                             <Image src={project.logoPath}
                                    alt={t('logoAlt')}
                                    className={"rounded-lg object-cover object-center bg-gray-300"}
+                                   style={{width: "50px", height: "50px"}}
                                    width={50}
                                    height={50}/>
                         }/>
