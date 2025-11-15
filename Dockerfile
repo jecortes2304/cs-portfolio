@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Instalar dependencias
 COPY package*.json ./
-RUN npm install --frozen-lockfile
+RUN npm ci
 
 # Copiar código
 COPY . .
