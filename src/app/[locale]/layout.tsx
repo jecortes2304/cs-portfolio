@@ -1,8 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import React from "react";
-import Footer from "@/components/footer/Footer";
-import {NextIntlClientProvider, useMessages} from "next-intl";
+import {NextIntlClientProvider} from "next-intl";
 import {getLocale, getMessages} from "next-intl/server";
 
 export const metadata: Metadata = {
@@ -18,10 +17,9 @@ export default async function HomeLayout({children}: {children: React.ReactNode;
         <html lang={locale}>
         <body className="bg-[#1a1a1a] text-white min-h-screen flex flex-col">
         <NextIntlClientProvider locale={locale} messages={messages}>
-            <main className="flex-grow">
+            <main className="flex-1">
                 {children}
             </main>
-            <Footer/>
         </NextIntlClientProvider>
         </body>
         </html>

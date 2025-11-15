@@ -1,0 +1,207 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_URL")
+}
+
+enum ProjectType {
+  mobile
+  web
+  desktop
+  game
+  cli
+  other
+}
+
+enum ProjectStatus {
+  finished
+  inProgress
+  pending
+  discontinued
+}
+
+model User {
+  id       Int     @id @default(autoincrement())
+  name     String
+  lastname String
+  username String  @unique
+  email    String  @unique
+  phone    String?
+  city     String?
+  address  String?
+  password String
+
+  roleId Int?
+  role   Role? @relation(fields: [roleId], references: [id])
+
+  profile     Profile?
+  projects    Project[]
+  permissions UserPermission[]
+  skills      Skill[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+model Role {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique
+  description String?
+  users       User[]
+  permissions Permission[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+model PermissionContext {
+  id          Int          @id @default(autoincrement())
+  name        String       @unique
+  description String?
+  permissions Permission[]
+
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  deleted        Boolean          @default(false)
+  UserPermission UserPermission[]
+}
+
+model Permission {
+  id        Int               @id @default(autoincrement())
+  name      String
+  roleId    Int?
+  role      Role?             @relation(fields: [roleId], references: [id])
+  contextId Int
+  context   PermissionContext @relation(fields: [contextId], references: [id])
+
+  read   Boolean @default(false)
+  write  Boolean @default(false)
+  edit   Boolean @default(false)
+  delete Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+
+  @@unique([roleId, contextId], name: "roleId_contextId")
+}
+
+model UserPermission {
+  id        Int               @id @default(autoincrement())
+  userId    Int
+  user      User              @relation(fields: [userId], references: [id])
+  contextId Int
+  context   PermissionContext @relation(fields: [contextId], references: [id])
+
+  read   Boolean @default(false)
+  write  Boolean @default(false)
+  edit   Boolean @default(false)
+  delete Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+model Profile {
+  id          Int          @id @default(autoincrement())
+  userId      Int          @unique
+  user        User         @relation(fields: [userId], references: [id])
+  profileData ProfileData?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+model ProfileData {
+  id        Int     @id @default(autoincrement())
+  profileId Int     @unique
+  profile   Profile @relation(fields: [profileId], references: [id])
+
+  profileImage String?
+  cvUrl        String?
+  aboutMe      String?
+  summary      String?
+  socials      SocialNetwork[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+model SocialNetwork {
+  id      Int     @id @default(autoincrement())
+  name    String
+  url     String
+  icon    String
+  visible Boolean @default(true)
+
+  profileDataId Int
+  profileData   ProfileData @relation(fields: [profileDataId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+model Project {
+  id     Int  @id @default(autoincrement())
+  userId Int
+  user   User @relation(fields: [userId], references: [id])
+
+  name          String
+  type          ProjectType
+  bannerPath    String?
+  logoPath      String?
+  imagesPath    String?
+  repositoryUrl String?
+  publishUrl    String?
+  status        ProjectStatus
+  techStack     String[]
+  descriptionEs String
+  descriptionEn String
+  visible       Boolean       @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+model Email {
+  id      Int    @id @default(autoincrement())
+  to      String
+  from    String
+  subject String
+  text    String
+  html    String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}
+
+model Skill {
+  id     Int  @id @default(autoincrement())
+  userId Int
+  user   User @relation(fields: [userId], references: [id])
+
+  name    String
+  percent Int
+  visible Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deleted   Boolean  @default(false)
+}

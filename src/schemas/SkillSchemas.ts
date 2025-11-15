@@ -1,15 +1,29 @@
-import {GenericResponse} from "@/schemas/GenericSchemas";
-
 export interface SkillSchema {
     id: number
+    userId: number
     name: string
     percent: number
+    visible: boolean
 }
 
-export interface SkillGetAll extends GenericResponse {
-    skills: SkillSchema []
+export interface SkillCreateSchema {
+    userId: number;
+    name: string;
+    percent: number;
+    visible?: boolean;
 }
 
-export interface SkillGetOne extends GenericResponse {
-    skill: SkillSchema | null
+export interface SkillUpdateSchema {
+    name?: string;
+    percent?: number;
+    visible?: boolean;
+    deleted?: boolean;
+}
+
+export interface SkillSchema {
+    id: number;
+    userId: number;
+    name: string;
+    percent: number;
+    visible: boolean;
 }

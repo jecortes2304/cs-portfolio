@@ -1,9 +1,9 @@
 "use client"
-import React, {useState, useEffect, useCallback, useRef, useMemo} from 'react';
-import {sendEmail} from "@/lib/request/email/sendEmail";
+import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import {email} from "@/lib/request/email";
 import {FormDataEmail, FormDataEmailErrors} from "@/schemas/EmailSchemas";
 import sendingJsonAnim from "@/components/animations/sending.json";
-import { useTranslations } from 'next-intl';
+import {useTranslations} from 'next-intl';
 import dynamic from "next/dynamic";
 
 const AnimatorRender = dynamic(() => import('@/components/animations/AnimnationRender'), {
@@ -41,7 +41,7 @@ export default function FormContact() {
     const sendEmailToService = useCallback(async () => {
         setIsLoading(true);
         if (Object.keys(formErrors).length === 0 && isSubmit) {
-            const response = await sendEmail(formValues);
+            const response = await email(formValues);
 
             if (response) {
                 setAlertValues({

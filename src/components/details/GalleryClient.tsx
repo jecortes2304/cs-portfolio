@@ -4,7 +4,7 @@ import Image from 'next/image';
 import {Gallery, Item} from 'react-photoswipe-gallery';
 import 'photoswipe/dist/photoswipe.css';
 import Rotate from '@/utils/rotate';
-import {getProjectImages} from "@/lib/request/project/project";
+import {getProjectImages} from "@/lib/request/project";
 
 interface GalleryClientProps {
     projectName: string;

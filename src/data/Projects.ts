@@ -3,6 +3,7 @@ import {ProjectSchema} from "@/schemas/ProjectSchemas";
 const ProjectsData: ProjectSchema [] = [
     {
         "id": 1,
+        "userId": 1,
         "name": "Sisga",
         "type": "desktop",
         "bannerPath": "/images/banners/sisga_banner.webp",
@@ -13,10 +14,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "inProgress",
         "techStack": ["JavaFx", "Spring Boot", "Hibernate", "MySQL", "Java 8"],
         "descriptionEs": "Sisga (Sistema de gestión de acuerdos) fue creado para automatizar y agilizar el proceso de reuniones y acuerdos de la entidad, generar gráficas de decisión y expedir documentos con firmas digitales.",
-        "descriptionEn": "Sisga (Agreement Management System) was created to automate and streamline the entity's meeting and agreement processes, generate decision graphs, and issue documents with digital signatures."
+        "descriptionEn": "Sisga (Agreement Management System) was created to automate and streamline the entity's meeting and agreement processes, generate decision graphs, and issue documents with digital signatures.",
+        "visible": true
     },
     {
         "id": 2,
+        "userId": 1,
         "name": "Find my Phrase",
         "type": "desktop",
         "bannerPath": "/images/banners/find_my_phrase_banner.webp",
@@ -27,10 +30,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["Java Swing", "PDFReader"],
         "descriptionEs": "Find my phrase surge como una inquietud y un proyecto personal, de manera simple permite encontrar una lista de PDFs que contengan una palabra o una frase con solo brindar un directorio.",
-        "descriptionEn": "Find my Phrase emerged as a personal project, simply allowing users to find a list of PDFs containing a word or phrase by providing a directory."
+        "descriptionEn": "Find my Phrase emerged as a personal project, simply allowing users to find a list of PDFs containing a word or phrase by providing a directory.",
+        "visible": true
     },
     {
         "id": 3,
+        "userId": 1,
         "name": "Power Off",
         "type": "desktop",
         "bannerPath": "/images/banners/power_off_banner.webp",
@@ -41,10 +46,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["C#", "Windows Form"],
         "descriptionEs": "Power Off permite recorrer todos los equipos de una LAN para ejecutar comandos o automatizar los mismos mediante una interfaz sencilla y cómoda",
-        "descriptionEn": "Power Off allows you to scan all devices on a LAN to execute or automate commands using a simple and user-friendly interface."
+        "descriptionEn": "Power Off allows you to scan all devices on a LAN to execute or automate commands using a simple and user-friendly interface.",
+        "visible": true
     },
     {
         "id": 4,
+        "userId": 1,
         "name": "Casero",
         "type": "mobile",
         "bannerPath": "/images/banners/casero_banner.webp",
@@ -55,10 +62,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["Java", "Jsoup", "Scraping Web", "Android SDK"],
         "descriptionEs": "Casero fue concebida para mejorar la experiencia y brindar nuevas funcionalidades al antiguo sistema de gestión de huéspedes para casas particulares.",
-        "descriptionEn": "Casero was designed to improve the experience and provide new functionalities to the old guest management system for private homes."
+        "descriptionEn": "Casero was designed to improve the experience and provide new functionalities to the old guest management system for private homes.",
+        "visible": true
     },
     {
         "id": 5,
+        "userId": 1,
         "name": "Conservador Trinidad",
         "type": "mobile",
         "bannerPath": "/images/banners/conservador_banner.webp",
@@ -69,10 +78,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["Kotlin", "Android SDK"],
         "descriptionEs": "Conservador Trinidad sirve como una herramienta promocional de la empresa Oficina del Conservador de Trinidad, además brinda funcionalidades para las inscripciones de eventos relacionados a la entidad.",
-        "descriptionEn": "Conservador Trinidad serves as a promotional tool for the Office of the Conservator of Trinidad and provides functionalities for event registrations related to the entity."
+        "descriptionEn": "Conservador Trinidad serves as a promotional tool for the Office of the Conservator of Trinidad and provides functionalities for event registrations related to the entity.",
+        "visible": true
     },
     {
         "id": 6,
+        "userId": 1,
         "name": "Recárgame App",
         "type": "mobile",
         "bannerPath": "/images/banners/recargame_banner.webp",
@@ -83,10 +94,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["Java", "Room", "Android SDK"],
         "descriptionEs": "Recárgame App fue desarrollada como parte del encargo de un cliente para gestionar las facturas y transferencias del sistema de dicha compañía (Recárgame), permitiendo la sincronización local y online de los datos.",
-        "descriptionEn": "Recárgame App was developed as part of a client's request to manage invoices and transfers for the company's system (Recárgame), enabling both local and online data synchronization."
+        "descriptionEn": "Recárgame App was developed as part of a client's request to manage invoices and transfers for the company's system (Recárgame), enabling both local and online data synchronization.",
+        "visible": true
     },
     {
         "id": 7,
+        "userId": 1,
         "name": "Dememo",
         "type": "mobile",
         "bannerPath": "/images/banners/dememo_banner.webp",
@@ -97,10 +110,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["Java", "Firebase", "Realm", "Android SDK"],
         "descriptionEs": "Dememo fue un proyecto en conjunto donde fui colaborador, la idea original fue concebida por el Ing. Elioenai Reyes González https://www.linkedin.com/in/elioenai-reyes-gonzález como parte de un proyecto para el movimiento cristiano.",
-        "descriptionEn": "Dememo was a collaborative project where I was a co-author. The original idea was conceived by Engineer Elioenai Reyes González (https://www.linkedin.com/in/elioenai-reyes-gonzález) as part of a project for the Christian movement."
+        "descriptionEn": "Dememo was a collaborative project where I was a co-author. The original idea was conceived by Engineer Elioenai Reyes González (https://www.linkedin.com/in/elioenai-reyes-gonzález) as part of a project for the Christian movement.",
+        "visible": false
     },
     {
         "id": 8,
+        "userId": 1,
         "name": "Casero Server",
         "type": "web",
         "bannerPath": "/images/banners/casero_server_banner.webp",
@@ -111,10 +126,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "inProgress",
         "techStack": ["Java", "Spring Boot", "Materializecss", "Hibernate", "MySQL", "JavaMail", "Thymeleaf", "Tomcat", "Javascript"],
         "descriptionEs": "Casero server es una simple web que fue ideada para gestionar las solicitudes de licencias para la aplicación Android de Casero, permite registrar las solicitudes de licencias, eliminarlas, crearlas y enviarlas mediante correo electrónico",
-        "descriptionEn": "Casero server is a simple web platform designed to manage license requests for the Casero Android app. It allows users to register, delete, create, and send license requests via email."
+        "descriptionEn": "Casero server is a simple web platform designed to manage license requests for the Casero Android app. It allows users to register, delete, create, and send license requests via email.",
+        "visible": true
     },
     {
         "id": 9,
+        "userId": 1,
         "name": "Cloud Scrapy",
         "type": "web",
         "bannerPath": "/images/banners/cloud_scrapy_banner.webp",
@@ -125,10 +142,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["NodeJs", "Web Scraping", "Express", "Puppeteer", "Mongo DB", "Redis", "Swagger", "Javascript", "Docker/docker-compose"],
         "descriptionEs": "CloudScrapy es un API-Rest que permite controlar un navegador sin cabeza en un servidor mediante llamadas http a la API, este permite al usuario hacer scraping web, hacer capturas de pantallas y ejecutar instrucciones lo que permite dinamizar la navegación, además, permite hacer ejecuciones para solucionar acciones requeridas, entre otras cosas más. Surge con la idea de abstraer toda la lógica, complejidad y la configuración en un servidor así como el consumo de recursos de las aplicaciones que necesiten usarla. Posee una licencia ISC, puedes visitar el repositorio de github y leer parte de la documentación si le interesa.",
-        "descriptionEn": "CloudScrapy is a REST API that allows users to control a headless browser on a server via HTTP calls to the API. It enables web scraping, screenshots, and instruction execution to streamline browsing. Additionally, it can perform tasks to meet required actions. The project was conceived to abstract logic, complexity, and server configuration while saving resources for applications that need to use it. It has an ISC license, and you can visit the GitHub repository to read part of the documentation if you're interested."
+        "descriptionEn": "CloudScrapy is a REST API that allows users to control a headless browser on a server via HTTP calls to the API. It enables web scraping, screenshots, and instruction execution to streamline browsing. Additionally, it can perform tasks to meet required actions. The project was conceived to abstract logic, complexity, and server configuration while saving resources for applications that need to use it. It has an ISC license, and you can visit the GitHub repository to read part of the documentation if you're interested.",
+        "visible": true
     },
     {
         "id": 10,
+        "userId": 1,
         "name": "Unnax Payment Gateway",
         "type": "web",
         "bannerPath": "/images/banners/unnax_payment_gateway_banner.webp",
@@ -139,10 +158,12 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["PHP", "WordPress", "WooCommerce", "REST API", "JavaScript", "cURL", "MySQL", "HTML", "CSS", "React", "NodeJs"],
         "descriptionEs": "Este proyecto es un plugin de WordPress y WooCommerce desarrollado en colaboración con los ingenieros Diony Castillo Rodríguez https://www.linkedin.com/in/diony-castillo y Javier Ojeda Rodríguez https://www.linkedin.com/in/javieralejandroojedarodríguez, que permite la integración rápida y eficiente del API de pago de Unnax SL. Está diseñado para facilitar a los comercios electrónicos la implementación de pasarelas de pago seguras y rápidas, optimizando así la experiencia de usuario en el proceso de compra. El plugin ofrece un método sencillo de integración sin necesidad de manejar la complejidad técnica del API, proporcionando un flujo de trabajo fluido para los desarrolladores y comerciantes.",
-        "descriptionEn": "This project is a WordPress and WooCommerce plugin developed in collaboration with engineers Diony Castillo Rodríguez (https://www.linkedin.com/in/diony-castillo) and Javier Ojeda Rodríguez (https://www.linkedin.com/in/javieralejandroojedarodríguez), which allows fast and efficient integration of the Unnax SL payment API. It is designed to facilitate e-commerce merchants in implementing secure and quick payment gateways, optimizing the user experience during the checkout process. The plugin offers a simple integration method without the need to handle the technical complexity of the API, providing a smooth workflow for developers and merchants."
+        "descriptionEn": "This project is a WordPress and WooCommerce plugin developed in collaboration with engineers Diony Castillo Rodríguez (https://www.linkedin.com/in/diony-castillo) and Javier Ojeda Rodríguez (https://www.linkedin.com/in/javieralejandroojedarodríguez), which allows fast and efficient integration of the Unnax SL payment API. It is designed to facilitate e-commerce merchants in implementing secure and quick payment gateways, optimizing the user experience during the checkout process. The plugin offers a simple integration method without the need to handle the technical complexity of the API, providing a smooth workflow for developers and merchants.",
+        "visible": true
     },
     {
         "id": 11,
+        "userId": 1,
         "name": "Simple Todo",
         "type": "web",
         "bannerPath": "/images/banners/simple_todo_banner.webp",
@@ -153,7 +174,8 @@ const ProjectsData: ProjectSchema [] = [
         "status": "finished",
         "techStack": ["Go", "Echo", "Gorm", "React", "Typescript", "Sqlite", "Github Actions", "Tailwind", "DaisyUi", "Vite"],
         "descriptionEs": "Simple Todo es una aplicación web que permite gestionar tareas de manera sencilla y eficiente. Desarrollada con Go en el backend y React en el frontend, esta aplicación utiliza una arquitectura RESTful para la comunicación entre el cliente y el servidor. La interfaz de usuario es intuitiva y está diseñada para facilitar la creación, edición y eliminación de tareas. Además, cuenta con un sistema de autenticación para garantizar la seguridad de los datos del usuario. La aplicación se despliega utilizando Github Actions, lo que permite una integración continua y un flujo de trabajo ágil. La base de datos se gestiona con Sqlite, y se compila a un archivo binario único, lo que facilita su distribución y ejecución en diferentes entornos. La aplicación está diseñada para ser ligera y rápida, ofreciendo una experiencia de usuario fluida y sin complicaciones.",
-        "descriptionEn": "Simple Todo is a web application that allows users to manage tasks in a simple and efficient manner. Developed with Go on the backend and React on the frontend, this application utilizes a RESTful architecture for communication between the client and server. The user interface is intuitive and designed to facilitate the creation, editing, and deletion of tasks. Additionally, it features an authentication system to ensure the security of user data. The application is deployed using GitHub Actions, enabling continuous integration and an agile workflow. The database is managed with SQLite, and it compiles into a single binary file, making it easy to distribute and run in different environments. The application is designed to be lightweight and fast, providing a smooth and hassle-free user experience."
+        "descriptionEn": "Simple Todo is a web application that allows users to manage tasks in a simple and efficient manner. Developed with Go on the backend and React on the frontend, this application utilizes a RESTful architecture for communication between the client and server. The user interface is intuitive and designed to facilitate the creation, editing, and deletion of tasks. Additionally, it features an authentication system to ensure the security of user data. The application is deployed using GitHub Actions, enabling continuous integration and an agile workflow. The database is managed with SQLite, and it compiles into a single binary file, making it easy to distribute and run in different environments. The application is designed to be lightweight and fast, providing a smooth and hassle-free user experience.",
+        "visible": true
     },
 
 ]

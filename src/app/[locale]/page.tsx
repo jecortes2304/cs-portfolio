@@ -5,17 +5,19 @@ import About from "@/components/about/About";
 import Portfolio from "@/components/portfolio/Portfolio";
 import Contact from "@/components/contact/Contact";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export default async function Home() {
 
     return (
-        <aside>
+        <div>
             <Header/>
             <Hero/>
             <Summarize/>
             <About/>
             <Portfolio/>
             <Contact/>
-        </aside>
+            <Footer />
+        </div>
     );
 }

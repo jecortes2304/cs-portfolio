@@ -42,7 +42,7 @@ const About: React.FC = async () => {
 
                 <div className="flex flex-wrap -mx-2">
                     {getSkillsListOrdered().map((skill, index) => (
-                        <SkillContainer key={index} name={skill.name} percent={skill.percent} />
+                        skill.visible && <SkillContainer key={index} name={skill.name} percent={skill.percent} />
                     ))}
                 </div>
             </div>

@@ -94,5 +94,217 @@
   "NotFoundPage": {
     "message": "Página no encontrada",
     "description": "La página que estás buscando no existe o ha sido movida. Por favor, verifica la URL e inténtalo de nuevo."
+  },
+  "AdminPanel": {
+    "AuthPage": {},
+    "DashboardPage": {
+      "title": "Tablero",
+      "kpi": {
+        "totalProjects": "Proyectos totales",
+        "visibleProjects": "Proyectos visibles",
+        "avgSkill": "Promedio % de skills",
+        "statusKinds": "Tipos de estado"
+      },
+      "charts": {
+        "projectsByStatus": "Proyectos por estado",
+        "topSkills": "Top de habilidades",
+        "emailsPerDay": "Correos por día (mock)"
+      },
+      "recent": {
+        "title": "Proyectos recientes",
+        "columns": {
+          "id": "ID",
+          "name": "Nombre",
+          "type": "Tipo",
+          "status": "Estado",
+          "visible": "Visible"
+        },
+        "visible": {
+          "yes": "Sí",
+          "no": "No"
+        },
+        "empty": "No hay proyectos recientes"
+      },
+      "types": {
+        "web": "Web",
+        "mobile": "Móvil",
+        "desktop": "Escritorio",
+        "game": "Juego",
+        "cli": "CLI",
+        "other": "Otro"
+      },
+      "status": {
+        "finished": "Terminado",
+        "inProgress": "En progreso",
+        "pending": "Pendiente",
+        "discontinued": "Descontinuado"
+      }
+    },
+    "HomePage": {
+      "NavBar": {
+        "title": "Panel de Administración",
+        "logout": "Cerrar sesión"
+      },
+      "Drawer": {
+        "brand": "CorteStudios"
+      }
+    },
+    "ProjectsPage": {
+      "title": "Proyectos",
+      "searchPlaceholder": "Buscar por nombre...",
+      "perPage": "por página",
+      "empty": "No se encontraron proyectos",
+      "columns": {
+        "id": "ID",
+        "logo": "Logo",
+        "name": "Nombre",
+        "type": "Tipo",
+        "repo": "Repositorio",
+        "publish": "Publicación",
+        "status": "Estado",
+        "stack": "Tecnologías",
+        "visible": "Visible",
+        "description": "Descripción",
+        "actions": "Acciones"
+      },
+      "types": {
+        "web": "Web",
+        "mobile": "Móvil",
+        "desktop": "Escritorio",
+        "game": "Juego",
+        "cli": "CLI",
+        "other": "Otro"
+      },
+      "status": {
+        "finished": "Terminado",
+        "inProgress": "En progreso",
+        "pending": "Pendiente",
+        "discontinued": "Descontinuado"
+      },
+      "actions": {
+        "new": "Nuevo proyecto",
+        "deleteSelected": "Eliminar seleccionados",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "close": "Cerrar"
+      },
+      "pagination": {
+        "showing": "Mostrando",
+        "of": "de",
+        "prev": "Anterior",
+        "next": "Siguiente"
+      },
+      "modal": {
+        "createTitle": "Crear proyecto",
+        "editTitle": "Editar proyecto"
+      },
+      "form": {
+        "name": "Nombre del proyecto",
+        "repositoryUrl": "URL del repositorio",
+        "publishUrl": "URL de publicación",
+        "descriptionEs": "Descripción (Español)",
+        "descriptionEn": "Descripción (Inglés)",
+        "imagesPath": "Ruta base de imágenes",
+        "logo": "Logo",
+        "banner": "Banner",
+        "images": "Imágenes",
+        "remove": "Eliminar",
+        "visible": "Visible"
+      },
+      "stackModal": {
+        "title": "Tecnologías"
+      },
+      "descriptionModal": {
+        "title": "Descripción"
+      }
+    },
+    "SkillsPage": {
+      "title": "Habilidades",
+      "searchPlaceholder": "Buscar por nombre...",
+      "perPage": "por página",
+      "empty": "No se encontraron habilidades",
+      "columns": {
+        "id": "ID",
+        "name": "Nombre",
+        "percent": "Porcentaje",
+        "visible": "Visible",
+        "actions": "Acciones"
+      },
+      "actions": {
+        "new": "Nueva habilidad",
+        "deleteSelected": "Eliminar seleccionados",
+        "cancel": "Cancelar",
+        "save": "Guardar"
+      },
+      "pagination": {
+        "showing": "Mostrando",
+        "of": "de",
+        "prev": "Anterior",
+        "next": "Siguiente"
+      },
+      "modal": {
+        "createTitle": "Crear habilidad",
+        "editTitle": "Editar habilidad"
+      },
+      "form": {
+        "name": "Nombre de la habilidad",
+        "percent": "Porcentaje",
+        "visible": "Visible"
+      }
+    },
+    "ProfilePage": {
+      "title": "Perfil",
+      "actions": {
+        "save": "Guardar cambios"
+      },
+      "saved": "Cambios guardados correctamente",
+      "sections": {
+        "cv": {
+          "title": "Currículum (URLs de Drive)",
+          "cvUrlEn": "URL del CV (Inglés)",
+          "cvUrlEs": "URL del CV (Español)"
+        },
+        "about": {
+          "title": "Acerca de / Presentación",
+          "placeholder": "Escribe un párrafo corto de presentación..."
+        },
+        "avatar": {
+          "title": "Avatar / Foto del portafolio",
+          "pathPlaceholder": "Ruta o URL del avatar",
+          "help": "Sube un archivo nuevo o proporciona una ruta/URL."
+        },
+        "contact": {
+          "title": "Datos de contacto",
+          "firstName": "Nombre",
+          "lastName": "Apellidos",
+          "email": "Correo electrónico",
+          "phone": "Teléfono",
+          "address": "Dirección"
+        },
+        "socials": {
+          "title": "Enlaces sociales",
+          "add": "Agregar enlace",
+          "empty": "Aún no has agregado enlaces sociales",
+          "labelPlaceholder": "Etiqueta personalizada (opcional)",
+          "urlPlaceholder": "https://tu-enlace.com",
+          "platforms": {
+            "instagram": "Instagram",
+            "twitter": "Twitter / X",
+            "linkedin": "LinkedIn",
+            "github": "GitHub",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "tiktok": "TikTok",
+            "other": "Otro"
+          }
+        },
+        "hero": {
+          "title": "Imagen del hero (opcional)",
+          "pathPlaceholder": "Ruta o URL de la imagen hero",
+          "help": "Imagen panorámica recomendada. Sube un archivo o pega una ruta/URL."
+        }
+      }
+    }
   }
 }

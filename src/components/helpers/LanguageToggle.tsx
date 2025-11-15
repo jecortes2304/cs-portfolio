@@ -1,28 +1,31 @@
 "use client"
-import {useRouter} from 'next/navigation';
-import React, {useCallback, useTransition} from 'react';
-import {useLocale} from "next-intl";
+import React, {useState} from 'react';
+import {usePathname, useRouter} from 'next/navigation';
+
+type LocaleType = 'es'|'en';
 
 const LanguageToggle = () => {
-    const locale = useLocale();
+    const localeFromPath = usePathname().split('/')[1] as LocaleType;
+    const [locale, setLocale] = useState<LocaleType>(localeFromPath || 'en');
     const router = useRouter();
-    const [isPending, startTransition] = useTransition();
+    const pathname = usePathname();
 
-    const changeLanguage = useCallback((locale: string) => {
-        startTransition(() => {
-            router.replace(`/${locale}`)
-        });
-    }, [router]);
+    const changeLanguage = (locale: LocaleType) => {
+        // Redirect to the new locale while preserving the current path
+        setLocale(locale)
+        router.push(`/${locale}${pathname.replace(/^\/(en|es)/, '')}`);
+    };
+
 
     return (
         <div className={"flex justify-center"}>
             <button className={"btn btn-xs text-white text-xs btn-ghost"}
-                    disabled={isPending || locale === 'en'}
+                    disabled={locale === 'en'}
                     onClick={() => changeLanguage('en')}>En
             </button>
             <div className="divider divider-horizontal"></div>
             <button className={"btn btn-xs text-white text-xs btn-ghost"}
-                    disabled={isPending || locale === 'es'}
+                    disabled={locale === 'es'}
                     onClick={() => changeLanguage('es')}>Es
             </button>
         </div>

@@ -94,5 +94,217 @@
   "NotFoundPage": {
     "message": "Page not found",
     "description": "The page you are looking for does not exist or has been moved."
+  },
+  "AdminPanel": {
+    "AuthPage": {},
+    "DashboardPage": {
+      "title": "Dashboard",
+      "kpi": {
+        "totalProjects": "Total projects",
+        "visibleProjects": "Visible projects",
+        "avgSkill": "Average skill %",
+        "statusKinds": "Status kinds"
+      },
+      "charts": {
+        "projectsByStatus": "Projects by status",
+        "topSkills": "Top skills",
+        "emailsPerDay": "Emails per day (mock)"
+      },
+      "recent": {
+        "title": "Recent projects",
+        "columns": {
+          "id": "ID",
+          "name": "Name",
+          "type": "Type",
+          "status": "Status",
+          "visible": "Visible"
+        },
+        "visible": {
+          "yes": "Yes",
+          "no": "No"
+        },
+        "empty": "No recent projects"
+      },
+      "types": {
+        "web": "Web",
+        "mobile": "Mobile",
+        "desktop": "Desktop",
+        "game": "Game",
+        "cli": "CLI",
+        "other": "Other"
+      },
+      "status": {
+        "finished": "Finished",
+        "inProgress": "In progress",
+        "pending": "Pending",
+        "discontinued": "Discontinued"
+      }
+    },
+    "HomePage": {
+      "NavBar": {
+        "title": "Admin Panel",
+        "logout": "Logout"
+      },
+      "Drawer": {
+        "brand": "CorteStudios"
+      }
+    },
+    "ProjectsPage": {
+      "title": "Projects",
+      "searchPlaceholder": "Search by name...",
+      "perPage": "per page",
+      "empty": "No projects found",
+      "columns": {
+        "id": "ID",
+        "logo": "Logo",
+        "name": "Name",
+        "type": "Type",
+        "repo": "Repository",
+        "publish": "Publish",
+        "status": "Status",
+        "stack": "Tech stack",
+        "visible": "Visible",
+        "description": "Description",
+        "actions": "Actions"
+      },
+      "types": {
+        "web": "Web",
+        "mobile": "Mobile",
+        "desktop": "Desktop",
+        "game": "Game",
+        "cli": "CLI",
+        "other": "Other"
+      },
+      "status": {
+        "finished": "Finished",
+        "inProgress": "In progress",
+        "pending": "Pending",
+        "discontinued": "Discontinued"
+      },
+      "actions": {
+        "new": "New project",
+        "deleteSelected": "Delete selected",
+        "cancel": "Cancel",
+        "save": "Save",
+        "close": "Close"
+      },
+      "pagination": {
+        "showing": "Showing",
+        "of": "of",
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "modal": {
+        "createTitle": "Create project",
+        "editTitle": "Edit project"
+      },
+      "form": {
+        "name": "Project name",
+        "repositoryUrl": "Repository URL",
+        "publishUrl": "Publish URL",
+        "descriptionEs": "Description (Spanish)",
+        "descriptionEn": "Description (English)",
+        "imagesPath": "Images base path",
+        "logo": "Logo",
+        "banner": "Banner",
+        "images": "Images",
+        "remove": "Remove",
+        "visible": "Visible"
+      },
+      "stackModal": {
+        "title": "Tech stack"
+      },
+      "descriptionModal": {
+        "title": "Description"
+      }
+    },
+    "SkillsPage": {
+      "title": "Skills",
+      "searchPlaceholder": "Search by name...",
+      "perPage": "per page",
+      "empty": "No skills found",
+      "columns": {
+        "id": "ID",
+        "name": "Name",
+        "percent": "Percent",
+        "visible": "Visible",
+        "actions": "Actions"
+      },
+      "actions": {
+        "new": "New skill",
+        "deleteSelected": "Delete selected",
+        "cancel": "Cancel",
+        "save": "Save"
+      },
+      "pagination": {
+        "showing": "Showing",
+        "of": "of",
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "modal": {
+        "createTitle": "Create skill",
+        "editTitle": "Edit skill"
+      },
+      "form": {
+        "name": "Skill name",
+        "percent": "Percent",
+        "visible": "Visible"
+      }
+    },
+    "ProfilePage": {
+      "title": "Profile",
+      "actions": {
+        "save": "Save changes"
+      },
+      "saved": "Changes saved successfully",
+      "sections": {
+        "cv": {
+          "title": "Curriculum (Drive URLs)",
+          "cvUrlEn": "CV URL (English)",
+          "cvUrlEs": "CV URL (Spanish)"
+        },
+        "about": {
+          "title": "About / Introduction",
+          "placeholder": "Write a short introduction paragraph..."
+        },
+        "avatar": {
+          "title": "Avatar / Portfolio photo",
+          "pathPlaceholder": "Avatar path or URL",
+          "help": "Upload a new file or provide a path/URL."
+        },
+        "contact": {
+          "title": "Contact info",
+          "firstName": "First name",
+          "lastName": "Last name",
+          "email": "Email",
+          "phone": "Phone",
+          "address": "Address"
+        },
+        "socials": {
+          "title": "Social links",
+          "add": "Add link",
+          "empty": "No social links added yet",
+          "labelPlaceholder": "Custom label (optional)",
+          "urlPlaceholder": "https://your-link.com",
+          "platforms": {
+            "instagram": "Instagram",
+            "twitter": "Twitter / X",
+            "linkedin": "LinkedIn",
+            "github": "GitHub",
+            "youtube": "YouTube",
+            "reddit": "Reddit",
+            "facebook": "Facebook",
+            "tiktok": "TikTok",
+            "other": "Other"
+          }
+        },
+        "hero": {
+          "title": "Hero image (optional)",
+          "pathPlaceholder": "Hero image path or URL",
+          "help": "Recommended wide image. Upload a file or paste a path/URL."
+        }
+      }
+    }
   }
 }

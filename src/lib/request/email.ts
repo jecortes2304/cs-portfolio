@@ -2,7 +2,7 @@ import {GenericResponse} from "@/schemas/GenericSchemas";
 import {FormDataEmail} from "@/schemas/EmailSchemas";
 
 
-export async function sendEmail(formData: FormDataEmail): Promise<GenericResponse> {
+export async function email(formData: FormDataEmail): Promise<GenericResponse> {
     const emailResponse = await fetch(`/api/v1/email/`, {
         method: 'POST',
         headers: {

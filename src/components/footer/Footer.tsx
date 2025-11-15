@@ -3,12 +3,12 @@ import Image from "next/image";
 import SocialIcon from "@/components/footer/SocialIcon";
 import {getTranslations} from "next-intl/server";
 
-const Footer: React.FC = async () => {
+const Footer: React.FC = async  () => {
     const t = await getTranslations('HomePage.FooterSection');
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-black text-white py-8">
+        <footer className="bg-black text-white py-3 w-full">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col items-center">
                     <p className="text-sm mb-4 flex items-center">

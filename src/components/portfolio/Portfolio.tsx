@@ -1,7 +1,7 @@
 import React from "react";
-import {getAllProjects} from "@/lib/request/project/project";
+import {getAllProjects} from "@/lib/request/project";
 import ProjectContainer from "@/components/portfolio/ProjectContainer";
-import { getTranslations } from 'next-intl/server';
+import {getTranslations} from 'next-intl/server';
 
 const Portfolio: React.FC = async () => {
     const projects = getAllProjects().projects;
@@ -13,7 +13,7 @@ const Portfolio: React.FC = async () => {
                 <h2 className="text-3xl font-bold text-center text-white mb-12">{t('title')}</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                     {projects.map((project) => (
-                        <ProjectContainer key={project.id} project={project} />
+                        project.visible && <ProjectContainer key={project.id} project={project} />
                     ))}
                 </div>
             </div>

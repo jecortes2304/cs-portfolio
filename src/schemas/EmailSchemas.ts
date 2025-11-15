@@ -11,3 +11,11 @@ export interface FormDataEmailErrors {
     email?: string
     message?: string
 }
+
+export interface Email {
+    to: string
+    from: string
+    subject: string
+    text: string
+    html: string
+}

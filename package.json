@@ -7,10 +7,17 @@
     "dev": "next dev -p 5000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma db push && prisma db seed"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
+    "@prisma/adapter-pg": "^6.19.0",
+    "@prisma/client": "^6.16.1",
+    "@prisma/extension-accelerate": "^2.0.2",
     "@react-email/button": "^0.0.15",
     "@react-email/container": "^0.0.12",
     "@react-email/heading": "^0.0.12",
@@ -19,20 +26,29 @@
     "@react-email/render": "^0.0.16",
     "@react-email/section": "^0.0.12",
     "@react-email/text": "^0.0.8",
+    "@types/bcrypt": "^6.0.0",
+    "bcrypt": "^6.0.0",
     "cookies-next": "^4.2.1",
+    "crypto-js": "^4.2.0",
     "lottie-web": "^5.12.2",
-    "next": "14.2.15",
+    "minio": "^8.0.6",
+    "next": "15.4.7",
+    "next-auth": "^4.24.6",
     "next-intl": "^3.17.2",
-    "nodemailer": "^6.9.14",
+    "nodemailer": "7.0.7",
+    "pg": "^8.16.3",
     "react": "^18",
     "react-dom": "^18",
     "react-photoswipe-gallery": "^3.0.1",
     "react-typed": "^2.0.12",
+    "recharts": "^3.1.2",
     "sharp": "^0.33.4"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.15",
+    "@types/pg": "^8.15.6",
     "@types/photoswipe": "^4.1.6",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -40,7 +56,10 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
+    "prisma": "^6.16.1",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.3"
   }
 }

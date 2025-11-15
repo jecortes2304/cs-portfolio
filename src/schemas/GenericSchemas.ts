@@ -16,4 +16,3 @@ export type LocaleType = 'en' | 'es'
 export interface GenericErrorResponse extends GenericResponse{
     errors?: string | string []
 }
-

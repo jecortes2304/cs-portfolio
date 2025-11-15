@@ -1,12 +1,13 @@
-import {getProjectById} from "@/lib/request/project/project";
+import {getProjectById} from "@/lib/request/project";
 import {ProjectSchema} from "@/schemas/ProjectSchemas";
 import GalleryClient from '@/components/details/GalleryClient';
 import React from "react";
 import InfoProjectSection from "@/components/details/InfoProjectSection";
 import FirstLineSection from "@/components/details/FirstLineSection";
 
-export default async function Details({params}: { params: { id: string } }) {
-    const projectResponse = await getProjectById(parseInt(params.id));
+export default async function Details({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const projectResponse = await getProjectById(parseInt(id));
 
     if (projectResponse.statusCode !== 200 || !projectResponse.project) {
         return <div>Proyecto no encontrado</div>;
