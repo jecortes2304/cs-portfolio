@@ -5,6 +5,10 @@ WORKDIR /app
 
 # Instalar dependencias
 COPY package*.json ./
+
+# Dependencias necesarias para compilar paquetes nativos de npm
+RUN apk add --no-cache python3 make g++ libc6-compat
+
 RUN npm install
 
 # Copiar código
