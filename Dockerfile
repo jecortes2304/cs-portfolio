@@ -1,38 +1,21 @@
-# Fase de build
-FROM node:20-alpine AS builder
+FROM node:20 AS builder
 
 WORKDIR /app
 
-# Instalar dependencias
 COPY package*.json ./
+RUN npm ci
 
-# Dependencias necesarias para compilar paquetes nativos de npm
-RUN apk add --no-cache python3 make g++ libc6-compat
-
-RUN npm install
-
-# Copiar código
 COPY . .
-
-# Compilar Next.js
 RUN npm run build
 
-# Fase de producción
-FROM node:20-alpine AS runner
+FROM node:20 AS runner
 
 WORKDIR /app
-
 ENV NODE_ENV=production
-ENV PORT=3000
 
-# Copiar desde builder solo lo necesario
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/package*.json ./
+COPY --from=builder /app ./
 
-# Instalar solo dependencias de producción
-RUN npm install --omit=dev
+RUN npm ci --omit=dev
 
 EXPOSE 3000
-
 CMD ["npm", "run", "start"]
