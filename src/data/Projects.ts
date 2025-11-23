@@ -149,7 +149,7 @@ const ProjectsData: ProjectSchema [] = [
         "logoPath": "/images/projects-images/simple_todo/logo.webp",
         "imagesPath": "/images/projects-images/simple_todo/",
         "repositoryUrl": "https://github.com/jecortes2304/SimpleToDo",
-        "publishUrl": "https://github.com/jecortes2304/SimpleToDo/releases",
+        "publishUrl": "https://simpletodo.cortestudios.online",
         "status": "finished",
         "techStack": ["Go", "Echo", "Gorm", "React", "Typescript", "Sqlite", "Github Actions", "Tailwind", "DaisyUi", "Vite"],
         "descriptionEs": "Simple Todo es una aplicación web que permite gestionar tareas de manera sencilla y eficiente. Desarrollada con Go en el backend y React en el frontend, esta aplicación utiliza una arquitectura RESTful para la comunicación entre el cliente y el servidor. La interfaz de usuario es intuitiva y está diseñada para facilitar la creación, edición y eliminación de tareas. Además, cuenta con un sistema de autenticación para garantizar la seguridad de los datos del usuario. La aplicación se despliega utilizando Github Actions, lo que permite una integración continua y un flujo de trabajo ágil. La base de datos se gestiona con Sqlite, y se compila a un archivo binario único, lo que facilita su distribución y ejecución en diferentes entornos. La aplicación está diseñada para ser ligera y rápida, ofreciendo una experiencia de usuario fluida y sin complicaciones.",
