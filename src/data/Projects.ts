@@ -135,7 +135,7 @@ const ProjectsData: ProjectSchema [] = [
         "logoPath": "/images/projects-images/unnax_payment_gateway/logo.webp",
         "imagesPath": "/images/projects-images/unnax_payment_gateway/",
         "repositoryUrl": "",
-        "publishUrl": "",
+        "publishUrl": "https://wordpress.cortestudios.online",
         "status": "finished",
         "techStack": ["PHP", "WordPress", "WooCommerce", "REST API", "JavaScript", "cURL", "MySQL", "HTML", "CSS", "React", "NodeJs"],
         "descriptionEs": "Este proyecto es un plugin de WordPress y WooCommerce desarrollado en colaboración con los ingenieros Diony Castillo Rodríguez https://www.linkedin.com/in/diony-castillo y Javier Ojeda Rodríguez https://www.linkedin.com/in/javieralejandroojedarodríguez, que permite la integración rápida y eficiente del API de pago de Unnax SL. Está diseñado para facilitar a los comercios electrónicos la implementación de pasarelas de pago seguras y rápidas, optimizando así la experiencia de usuario en el proceso de compra. El plugin ofrece un método sencillo de integración sin necesidad de manejar la complejidad técnica del API, proporcionando un flujo de trabajo fluido para los desarrolladores y comerciantes.",

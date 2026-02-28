@@ -1,4 +1,4 @@
-import { SkillSchema } from "@/schemas/SkillSchemas";
+import {SkillSchema} from "@/schemas/SkillSchemas";
 
 const SkillsData: SkillSchema[] = [
     {
@@ -34,7 +34,7 @@ const SkillsData: SkillSchema[] = [
     {
         "id": 7,
         "name": "Flask",
-        "percent": 60,
+        "percent": 50,
     },
     {
         "id": 8,
@@ -145,6 +145,31 @@ const SkillsData: SkillSchema[] = [
         "id": 29,
         "name": "Docker",
         "percent": 65,
+    },
+    {
+        "id": 30,
+        "name": "GORM",
+        "percent": 50,
+    },
+    {
+        "id": 31,
+        "name": "Echo",
+        "percent": 57,
+    },
+    {
+        "id": 32,
+        "name": "Gin",
+        "percent": 71,
+    },
+    {
+        "id": 33,
+        "name": "Wails",
+        "percent": 54,
+    },
+    {
+        "id": 34,
+        "name": "Angular",
+        "percent": 42,
     },
 ];
 
