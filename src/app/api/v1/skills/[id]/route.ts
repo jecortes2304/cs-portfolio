@@ -4,13 +4,13 @@ import {SkillUpdateSchema} from "@/schemas/SkillSchemas";
 
 const skillRepository = new SkillRepository();
 
-// GET /api/skills/:id
 export async function GET(
     _req: NextRequest,
-    { params }: { params: { id: string } }
+    context: { params: Promise<{ id: string }> }
 ) {
     try {
-        const id = Number(params.id);
+        const {id: routeId} = await context.params;
+        const id = Number(routeId);
         if (!id || Number.isNaN(id) || id <= 0) {
             return NextResponse.json(
                 { message: "El ID de skill no es válido" },
@@ -36,13 +36,13 @@ export async function GET(
     }
 }
 
-// PUT /api/skills/:id
 export async function PUT(
     req: NextRequest,
-    { params }: { params: { id: string } }
+    context: { params: Promise<{ id: string }> }
 ) {
     try {
-        const id = Number(params.id);
+        const {id: routeId} = await context.params;
+        const id = Number(routeId);
         if (!id || Number.isNaN(id) || id <= 0) {
             return NextResponse.json(
                 { message: "El ID de skill no es válido" },
@@ -70,13 +70,13 @@ export async function PUT(
     }
 }
 
-// DELETE /api/skills/:id  (soft delete)
 export async function DELETE(
     _req: NextRequest,
-    { params }: { params: { id: string } }
+    context: { params: Promise<{ id: string }> }
 ) {
     try {
-        const id = Number(params.id);
+        const {id: routeId} = await context.params;
+        const id = Number(routeId);
         if (!id || Number.isNaN(id) || id <= 0) {
             return NextResponse.json(
                 { message: "El ID de skill no es válido" },

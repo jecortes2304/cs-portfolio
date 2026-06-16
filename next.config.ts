@@ -1,19 +1,17 @@
 import createNextIntlPlugin from 'next-intl/plugin';
+import type {NextConfig} from "next";
 
-const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
     images: {
         remotePatterns: [
-            // 🔹 MinIO local
             {
                 protocol: 'http',
                 hostname: '192.168.1.14',
                 port: '9000',
                 pathname: '/**',
             },
-            // 🔹 MinIO producción
             {
                 protocol: 'https',
                 hostname: 'minio.cortestudios.online',
@@ -22,6 +20,12 @@ const nextConfig = {
         ],
     },
     reactStrictMode: true,
+    serverExternalPackages: ['@prisma/client', 'bcrypt'],
+    turbopack: {
+        resolveAlias: {
+            'next-intl/config': './src/i18n/request.ts',
+        },
+    },
     experimental: {
         serverActions: {
             bodySizeLimit: '100mb',

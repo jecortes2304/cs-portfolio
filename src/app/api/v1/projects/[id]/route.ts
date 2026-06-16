@@ -4,9 +4,10 @@ import {uploadProjectImageFromFile} from "@/lib/minio/projectStorage";
 
 const projectRepository = new ProjectRepository();
 
-export async function GET(_req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(_req: NextRequest, context: { params: Promise<{ id: string }> }) {
     try {
-        const id = Number(params.id);
+        const { id: routeId } = await context.params;
+        const id = Number(routeId);
         if (!id || Number.isNaN(id) || id <= 0) {
             return NextResponse.json({ success: false, message: "El ID de proyecto no es válido", project: null }, { status: 400 });
         }
@@ -21,8 +22,6 @@ export async function GET(_req: NextRequest, { params }: { params: { id: string 
 }
 
 export async function PUT(req: NextRequest, context: { params: Promise<{ id: string }> }) {
-    // const { user, response } = await requireAuth();
-    // if (!user) return response!;
     try {
         const { id } = await context.params;
         const idNumber = Number(id);
@@ -93,9 +92,10 @@ export async function PUT(req: NextRequest, context: { params: Promise<{ id: str
     }
 }
 
-export async function DELETE(_req: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(_req: NextRequest, context: { params: Promise<{ id: string }> }) {
     try {
-        const id = Number(params.id);
+        const { id: routeId } = await context.params;
+        const id = Number(routeId);
         if (!id || Number.isNaN(id) || id <= 0) {
             return NextResponse.json({ success: false, message: "El ID de proyecto no es válido" }, { status: 400 });
         }

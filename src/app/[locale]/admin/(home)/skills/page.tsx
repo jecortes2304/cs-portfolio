@@ -97,10 +97,11 @@ export default function SkillsPage() {
 
         if (creating) {
             const nextId = rows.length ? Math.max(...rows.map((r) => r.id)) + 1 : 1;
-            const newRow: SkillSchema = { id: nextId, name, percent, visible };
+            const fallbackUserId = rows[0]?.userId ?? 1;
+            const newRow: SkillSchema = { id: nextId, userId: fallbackUserId, name, percent, visible };
             setRows((prev) => [newRow, ...prev]);
         } else if (editing) {
-            setRows((prev) => prev.map((r) => (r.id === editing.id ? { id: editing.id, name, percent, visible } : r)));
+            setRows((prev) => prev.map((r) => (r.id === editing.id ? { ...r, name, percent, visible } : r)));
         }
 
         closeForm();

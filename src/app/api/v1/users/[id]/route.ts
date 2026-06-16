@@ -5,10 +5,11 @@ const userRepository = new UserRepository();
 
 export async function GET(
     _req: NextRequest,
-    { params }: { params: { id: string } }
+    context: { params: Promise<{ id: string }> }
 ) {
     try {
-        const id = Number(params.id);
+        const {id: routeId} = await context.params;
+        const id = Number(routeId);
 
         if (!id || Number.isNaN(id) || id <= 0) {
             return NextResponse.json(

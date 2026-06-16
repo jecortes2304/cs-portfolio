@@ -1,6 +1,6 @@
 import { SkillSchema } from "@/schemas/SkillSchemas";
 
-const SkillsData: SkillSchema[] = [
+const SkillsDataRaw: Omit<SkillSchema, "userId">[] = [
     {
         "id": 1,
         "name": "Java",
@@ -176,5 +176,7 @@ const SkillsData: SkillSchema[] = [
         "visible": true
     },
 ];
+
+const SkillsData: SkillSchema[] = SkillsDataRaw.map((skill) => ({ ...skill, userId: 1 }));
 
 export default SkillsData;

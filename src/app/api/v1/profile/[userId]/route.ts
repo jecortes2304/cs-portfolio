@@ -1,6 +1,7 @@
 import {UserSchema} from "@/schemas/UserSchema";
 import {Profile, ProfileData, SocialNetwork, User} from "@prisma/client";
 import {CrudRepositoryComplete} from "@/lib/prisma/CrudRepository";
+import {NextRequest, NextResponse} from "next/server";
 import {
     ProfileCreateSchema,
     ProfileResponseSchema,
@@ -377,3 +378,38 @@ export class ProfileRepository extends CrudRepositoryComplete<
         };
     }
 }
+
+const profileRepository = new ProfileRepository();
+
+export async function GET(_req: NextRequest, context: { params: Promise<{ userId: string }> }) {
+    const {userId} = await context.params;
+    const parsedUserId = Number(userId);
+
+    if (!Number.isInteger(parsedUserId) || parsedUserId <= 0) {
+        return NextResponse.json({error: "Invalid userId"}, {status: 400});
+    }
+
+    const profile = await profileRepository.findByUserId(parsedUserId);
+
+    if (!profile) {
+        return NextResponse.json({error: "Profile not found"}, {status: 404});
+    }
+
+    return NextResponse.json(profile, {status: 200});
+}
+
+export async function PUT(req: NextRequest, context: { params: Promise<{ userId: string }> }) {
+    const {userId} = await context.params;
+    const parsedUserId = Number(userId);
+
+    if (!Number.isInteger(parsedUserId) || parsedUserId <= 0) {
+        return NextResponse.json({error: "Invalid userId"}, {status: 400});
+    }
+
+    const body = await req.json();
+    const payload: ProfileUpdateSchema | ProfileCreateSchema = body;
+    const profile = await profileRepository.upsertByUserId(parsedUserId, payload);
+
+    return NextResponse.json(profile, {status: 200});
+}
+
